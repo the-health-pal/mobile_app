@@ -1,6 +1,7 @@
 # Setting Up the Project
 
-This guide will walk you through the steps needed to install Android Studio and set up a development environment for React Native.
+This guide will walk you through the steps needed to install Android Studio and set up a development environment for
+React Native.
 
 ## Prerequisites
 
@@ -12,17 +13,20 @@ Before starting, ensure that you have the following installed:
    brew install watchman
    ```
 
-3. **Java Development Kit (JDK)**: Install OpenJDK 11 or later. You can download it from [AdoptOpenJDK](https://adoptopenjdk.net/) or for linux, use:
+3. **Java Development Kit (JDK)**: Install OpenJDK 11 or later. You can download it
+   from [AdoptOpenJDK](https://adoptopenjdk.net/) or for linux, use:
    ```bash
    sudo apt install openjdk-11-jdk
    ```
-   
-* When installing the jdk in windows, use the msi installer. If you are using the zip, then make sure that you add the $JAVA_HOME variable to the system path.
+
+* When installing the jdk in windows, use the msi installer. If you are using the zip, then make sure that you add the $
+  JAVA_HOME variable to the system path.
 
 ## Step 1: Install Android Studio
 
 1. **Download Android Studio**:
-    - Go to the [Android Studio Download Page](https://developer.android.com/studio) and download the latest version for your operating system.
+    - Go to the [Android Studio Download Page](https://developer.android.com/studio) and download the latest version for
+      your operating system.
 
 2. **Install Android Studio**:
     - Follow the installation steps specific to your platform (Windows, macOS, or Linux).
@@ -30,7 +34,8 @@ Before starting, ensure that you have the following installed:
 3. **Set Up the Android SDK**:
     - Launch Android Studio.
     - Go to `Preferences` (macOS) or `File > Settings` (Windows/Linux).
-    - Navigate to `Appearance & Behavior > System Settings > Android SDK`. (If this is your first time, open Android Studio and select more actions and go to SDK Manager from there.)
+    - Navigate to `Appearance & Behavior > System Settings > Android SDK`. (If this is your first time, open Android
+      Studio and select more actions and go to SDK Manager from there.)
     - Under the SDK Platforms tab, select:
         - Android 14.0 or your preferred version. (An actual android device is recommended instead of the emulator.)
     - Under the SDK Tools tab, ensure that the following are checked:
@@ -45,18 +50,18 @@ Before starting, ensure that you have the following installed:
 ## Step 2: Set Up Environment Variables
 
 1. Open the **Environment Variables** settings:
-   - Right-click on `This PC` or `My Computer` and select `Properties`.
-   - Click `Advanced system settings` > `Environment Variables`.
+    - Right-click on `This PC` or `My Computer` and select `Properties`.
+    - Click `Advanced system settings` > `Environment Variables`.
 
 2. Add a new system variable:
-   - **Variable name**: `ANDROID_HOME`
-   - **Variable value**: The path to your Android SDK (e.g., `C:\Users\YourUsername\AppData\Local\Android\Sdk`).
+    - **Variable name**: `ANDROID_HOME`
+    - **Variable value**: The path to your Android SDK (e.g., `C:\Users\YourUsername\AppData\Local\Android\Sdk`).
 
 3. Edit the `Path` system variable and add the following:
-   - `%ANDROID_HOME%\emulator`
-   - `%ANDROID_HOME%\tools`
-   - `%ANDROID_HOME%\tools\bin`
-   - `%ANDROID_HOME%\platform-tools`
+    - `%ANDROID_HOME%\emulator`
+    - `%ANDROID_HOME%\tools`
+    - `%ANDROID_HOME%\tools\bin`
+    - `%ANDROID_HOME%\platform-tools`
 
 4. Click `OK` to save changes.
 
@@ -76,7 +81,7 @@ Before starting, ensure that you have the following installed:
    ```bash
    npx expo run:android
    ```
-   
+
 * The first build takes approximately 10 - 30 minutes to complete depending on the computer specifications.
 
 ## Troubleshooting
